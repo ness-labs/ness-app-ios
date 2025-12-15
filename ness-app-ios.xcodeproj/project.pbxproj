@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1D2226CF2EF064E200719C33 /* Privy in Frameworks */ = {isa = PBXBuildFile; productRef = 1D2226CE2EF064E200719C33 /* Privy */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1D7D370C2EF02AA9000CA207 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D2226CF2EF064E200719C33 /* Privy in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = "ness-app-ios";
 			packageProductDependencies = (
+				1D2226CE2EF064E200719C33 /* Privy */,
 			);
 			productName = "ness-app-ios";
 			productReference = 1D7D36FC2EF02AA8000CA207 /* ness-app-ios.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 1D7D36F32EF02AA8000CA207;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1D2226CD2EF064E200719C33 /* XCRemoteSwiftPackageReference "privy-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1D7D36FD2EF02AA8000CA207 /* Products */;
 			projectDirPath = "";
@@ -578,6 +587,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1D2226CD2EF064E200719C33 /* XCRemoteSwiftPackageReference "privy-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/privy-io/privy-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1D2226CE2EF064E200719C33 /* Privy */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D2226CD2EF064E200719C33 /* XCRemoteSwiftPackageReference "privy-ios" */;
+			productName = Privy;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1D7D36F42EF02AA8000CA207 /* Project object */;
 }
